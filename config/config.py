@@ -24,7 +24,7 @@ API_HASH = getenv("API_HASH", "eb5120ad1d5b44028d11f41755295bba")
 BOT_TOKEN = getenv("BOT_TOKEN", "5750558252:AAF9soqjcUYJBjGQdyrjJaalJtHS5TuMT6A")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://EXONTESTMONGO:EXONTESTMONGO@cluster0.bviw7ic.mongodb.net/?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -44,8 +44,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Lover")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1548904516").split())
-)  # Input type must be interger
+    map(int, getenv("OWNER_ID", "1548904516").split()))  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
@@ -166,7 +165,7 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", None)
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/cf7ff7d0fbf2c4bfb4330.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
